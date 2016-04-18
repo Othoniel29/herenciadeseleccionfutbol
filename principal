@@ -1,0 +1,16 @@
+// codigo hecho por: othoniel salas aparicio
+public class principal
+{
+           public static void main(String[] args) {
+        futbolista futbolista1 = new futbolista ("Raymond Steven", "tuzos del pachuca",26);
+        futbolista1.setIdfutbolista("futbolista profesional");
+        futbolista1.mostrarNombreEquipoYCarnet();
+        entrenador entrenador1 = new entrenador ("Iker steven", "madrid",26);
+        entrenador1.setIdentrenador("entrenador master");
+        entrenador1.mostrarNombreEquipoYCarnet();
+        masajista masajista1 = new masajista ("aaron", "santos",40);
+        masajista1.setIdmasajista("experto y profesional");
+        masajista1.mostrarNombreEquipoYCarnet();
+    }
+        
+    }
