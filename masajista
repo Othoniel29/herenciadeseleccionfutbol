@@ -1,0 +1,21 @@
+// codigo hecho por: othoniel salas aparicio
+
+public class masajista extends seleccionFutbol
+{
+    private String Idmasajista;
+    //Constructor de la subclase: incluimos como parámetros al menos los del constructor de la superclase
+    public masajista (String nombre, String equipo, int edad) {
+        super(nombre, equipo, edad);
+        Idmasajista = "Unknown";   
+    } //Cierre del constructor
+    //Métodos específicos de la subclase
+    public void setIdmasajista (String Idmasajista) { this.Idmasajista = Idmasajista;   }
+    public String getIdmasajista () { return Idmasajista;   }
+    public void mostrarNombreEquipoYCarnet() 
+    {
+        // nombre = "aaron"; Si tratáramos de acceder directamente a un campo privado de la superclase, salta un error
+        // Sí podemos acceder a variables de instancia a través de los métodos de acceso públicos de la superclase
+        System.out.println ("masajista con nombre: " + getNombre() + " " + getEquipo() +
+         " masajista con nivel para masajes : " + getIdmasajista() + " " + getEdad() ); 
+        }
+}
