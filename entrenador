@@ -1,0 +1,20 @@
+// codigo hecho por othoniel salas aparicio.
+public class entrenador extends seleccionFutbol
+{
+    private String Identrenador;
+    //Constructor de la subclase: incluimos como parámetros al menos los del constructor de la superclase
+    public entrenador (String nombre, String equipo, int edad) {
+        super(nombre, equipo, edad);
+        Identrenador = "Unknown";   
+    } //Cierre del constructor
+    //Métodos específicos de la subclase
+    public void setIdentrenador (String Identrenador) { this.Identrenador = Identrenador;   }
+    public String getIdentrenador () { return Identrenador;   }
+    public void mostrarNombreEquipoYCarnet() 
+    {
+        // nombre = "iker steven"; Si tratáramos de acceder directamente a un campo privado de la superclase, salta un error
+        // Sí podemos acceder a variables de instancia a través de los métodos de acceso públicos de la superclase
+        System.out.println ("entrenador con nombre: " + getNombre() + " " +  getEquipo() +
+         " entrenador de nivel : " + getIdentrenador() + " " + getEdad()); 
+        }
+}
