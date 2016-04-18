@@ -1,0 +1,17 @@
+// codigo hecho por othoniel salas aparicio.  
+ import java.util.Scanner;
+public class seleccionFutbol
+{
+  private String nombre;
+    private String equipo;
+    private int edad;
+    //Constructor
+    public seleccionFutbol (String nombre, String equipo, int edad) {
+        this.nombre = nombre;
+        this.equipo = equipo;
+        this.edad = edad;                   }
+    //Métodos
+    public String getNombre () { return nombre;  }
+    public String getEquipo () { return equipo;  }
+    public int getEdad () { return edad;   }
+}
